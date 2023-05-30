@@ -1,0 +1,4 @@
+Set no repite, no tiene orden
+List puede repetirse, indexado, ordenado, eliminar y anadir, etirador
+Quere, no permite acceso aleatorio, solo la punta o la cola o a ambos 
+Map, repetible, indexado pero con clave
