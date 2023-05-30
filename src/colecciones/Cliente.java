@@ -1,6 +1,25 @@
 package colecciones;
 
+import java.util.Objects;
+
 public class Cliente {
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(nCuenta);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		return Objects.equals(nCuenta, other.nCuenta);
+	}
 
 	private String nombre;
 	private double saldo;
@@ -36,8 +55,8 @@ public class Cliente {
 	public void setnCuenta(String nCuenta) {
 		this.nCuenta = nCuenta;
 	}
-
+	@Override
 	public String toString() {
-		return "el nombre es: " + nombre + " el N de cuenta es: " + nCuenta + " el saldo en la cuenta es de: " + saldo;
+		return "Cliente [nombre=" + nombre + ", saldo=" + saldo + ", nCuenta=" + nCuenta + "]";
 	}
 }
