@@ -19,7 +19,7 @@ public class ListasVinculadas {
 			it.next();
 			it.add("Jhon");
 		
-		//this is a commentar
+		//this is a comment
 		
 		for (String x : personas) {
 			System.out.println(x);
