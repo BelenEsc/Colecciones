@@ -23,6 +23,7 @@ public class Mapas {
 
 		for (Map.Entry<String, Empleado> ele: mapaEmpleado.entrySet()) {
 			System.out.println(ele.getKey());
+			System.out.println(ele.getValue());
 		}
 	}
 
